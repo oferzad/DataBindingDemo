@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataBindingDemo
 {
-    class Student
+    class StudentWithoutNotification
     {
         private string name;
         private int grade;
@@ -35,7 +35,7 @@ namespace DataBindingDemo
         }
     }
 
-    class StudentWithNotification: INotifyPropertyChanged
+    class Student: INotifyPropertyChanged
     {
         private string name;
         private int grade;

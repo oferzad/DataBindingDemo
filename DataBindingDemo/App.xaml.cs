@@ -10,7 +10,8 @@ namespace DataBindingDemo
         {
             InitializeComponent();
 
-            MainPage = new DemoBindingINotification();
+            //MainPage = new DemoBindingINotification();
+            MainPage = new DemoInternalDataBinding();
         }
 
         protected override void OnStart()

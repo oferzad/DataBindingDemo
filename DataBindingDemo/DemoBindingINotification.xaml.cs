@@ -12,9 +12,9 @@ namespace DataBindingDemo
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DemoBindingINotification : ContentPage
     {
-        private StudentWithNotification ReadStudentInfo()
+        private Student ReadStudentInfo()
         {
-            return new StudentWithNotification()
+            return new Student()
             {
                 Name = "Ofer",
                 Grade = 70
@@ -28,7 +28,7 @@ namespace DataBindingDemo
 
         private void btnBonus_Clicked(object sender, EventArgs e)
         {
-            StudentWithNotification student = (StudentWithNotification)this.BindingContext;
+            Student student = (Student)this.BindingContext;
             student.Grade += 20;
         }
     }
