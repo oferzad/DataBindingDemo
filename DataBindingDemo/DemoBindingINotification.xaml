@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBindingDemo.DemoBindingINotification">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding Name}" Placeholder="Student Name"
+                HorizontalOptions="CenterAndExpand" />
+            <Entry Text="{Binding Grade}" Placeholder="Student Grade"
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Apply Bonus" x:Name="btnBonus" Clicked="btnBonus_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
